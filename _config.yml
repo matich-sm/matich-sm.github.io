@@ -1,0 +1,14 @@
+#    Crea una colección llamada products para que cada producto sea un fichero en _products. 
+#    output: true hace que cada archivo tenga su propia URL.
+
+title: "Organiza Tu Hogar"
+description: "Guías y productos para organizar tu cocina y casa. Recomendaciones y reviews."
+url: "https://matich-sm.github.io"     # pon aquí tu URL real
+baseurl: ""                            # deja vacío si es user site
+theme: minima                          # usa minima o elimina si vas a usar tus layouts
+collections:
+  products:
+    output: true
+    permalink: /:collection/:name/
+permalink: /:categories/:title/
+plugins: []   # sin plugins para que GitHub Pages compile sin Actions
