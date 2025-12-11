@@ -1,5 +1,92 @@
-body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; background:#f7f7f7; color:#222; }
-header { background:#2f855a; color:white; padding:2rem 1rem; text-align:center; }
-.container { max-width:1000px; margin:1.5rem auto; padding:0 1rem; }
-.card { background:white; border-radius:10px; padding:1rem; box-shadow:0 6px 18px rgba(0,0,0,0.06); margin-bottom:1rem; }
-a.btn { background:#ff9900; color:white; padding:.6rem .9rem; border-radius:8px; text-decoration:none; font-weight:600; }
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: #f7f2ec;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('/assets/img/fondo-pagina-principal-foto-interior-casa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 700px;
+    padding: 0 1rem;
+    animation: fadeSlide 1.4s ease;
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.sections {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: #744f28;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #d6a96b;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background .3s ease;
+}
+
+.btn:hover {
+    background: #b88950;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
