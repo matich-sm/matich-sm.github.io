@@ -9,6 +9,17 @@ title: "Organiza Tu Hogar"
 
 <div class="hero">
   <div class="hero-content">
+    <h1>WEB EN CONSTRUCCIÓN</h1>
+    <p class="hero-sub">
+      En un futuro aqui habrá una espectacular web :)
+    </p>
+  </div>
+</div>
+
+
+<!--
+<div class="hero">
+  <div class="hero-content">
     <h1>Organiza Tu Hogar</h1>
     <p class="hero-sub">
       Inspiración, ideas y productos para crear un hogar cálido y ordenado.
@@ -39,3 +50,4 @@ title: "Organiza Tu Hogar"
 <footer>
   © 2025 Organiza Tu Hogar — Amazon Afiliados
 </footer>
+-->

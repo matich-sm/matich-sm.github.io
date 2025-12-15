@@ -4,25 +4,15 @@
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  {% include head.html %}
-</head>
+  <head>
+    {% include head.html %}
+  </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HV19X47N9Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <body>
 
-  gtag('config', 'G-HV19X47N9Y');
-</script>
+    <main>
+      {{ content }} <!-- Aquí se insertará lo que haya en index.md -->
+    </main>
 
-<body>
-
-  <main>
-    {{ content }} <!-- Aquí se insertará lo que haya en index.md -->
-  </main>
-
-</body>
+  </body>
 </html>
