@@ -11,7 +11,7 @@ title: "Organiza Tu Hogar"
   <div class="hero-content">
     <h1>WEB EN CONSTRUCCIÓN</h1>
     <p class="hero-sub">
-      En un futuro aqui habrá una espectacular web :)
+      En un futuro aqui habrá una espectacular web
     </p>
   </div>
 </div>
